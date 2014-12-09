@@ -2,6 +2,7 @@
 #'
 #' @param M mutation matrix
 #' @param keys list with the following elements: somatic, germline, amp, del, upreg, downreg
+#' @param sortGenes boolean whether or not to sort the genes, default FALSE
 oncoprint <- function(M, keys=list(somatic="MUT", germline="GERMLINE", amp="AMP", 
                       del="HOMDEL", upreg="UP", downreg="DOWN"), sortGenes=FALSE){
   

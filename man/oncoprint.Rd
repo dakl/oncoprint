@@ -10,6 +10,8 @@ oncoprint(M, keys = list(somatic = "MUT", germline = "GERMLINE", amp = "AMP",
 \item{M}{mutation matrix}
 
 \item{keys}{list with the following elements: somatic, germline, amp, del, upreg, downreg}
+
+\item{sortGenes}{boolean whether or not to sort the genes, default FALSE}
 }
 \description{
 function to create an oncoprint plot

@@ -24,4 +24,3 @@ memoSort <- function(M, sortGenes=TRUE) {
   sampleOrder <- order(scores, decreasing = TRUE)# sort(scores, decreasing=TRUE, index.return=TRUE)$ix;
   return(M[geneOrder, sampleOrder]);
 }
-M <- memoSort(mutmat, FALSE)[,1:6]
