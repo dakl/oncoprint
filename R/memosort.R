@@ -13,13 +13,15 @@ memoSort <- function(M, sortGenes=TRUE) {
     score <- 0;
     for(i in 1:length(x)) {
       if(x[i]) {
-        score <- score + 2^(length(x)-i);
+        score <- score + 2^(20+length(x)-i);        
+        break
       }
     }
+    score <- score + sum(x*(length(x):1))
     return(score);
   }
   scores <- apply(M[geneOrder, ], 2, scoreCol);
-  sampleOrder <- sort(scores, decreasing=TRUE, index.return=TRUE)$ix;
+  sampleOrder <- order(scores, decreasing = TRUE)# sort(scores, decreasing=TRUE, index.return=TRUE)$ix;
   return(M[geneOrder, sampleOrder]);
 }
-
+M <- memoSort(mutmat, FALSE)[,1:6]
