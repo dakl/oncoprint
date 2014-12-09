@@ -3,7 +3,13 @@
 \alias{oncoprint}
 \title{function to create an oncoprint plot}
 \usage{
-oncoprint(somatic, germline)
+oncoprint(M, keys = list(somatic = "MUT", germline = "GERMLINE", amp = "AMP",
+  del = "HOMDEL", upreg = "UP", downreg = "DOWN"), sortGenes = FALSE)
+}
+\arguments{
+\item{M}{mutation matrix}
+
+\item{keys}{list with the following elements: somatic, germline, amp, del, upreg, downreg}
 }
 \description{
 function to create an oncoprint plot
