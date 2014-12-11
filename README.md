@@ -28,7 +28,7 @@ Row names are genes, column names are samples. The following annotations are all
 * Somatic mutations (`MUT`), green box
 * Germline mutations (`GERMLINE`), purple box
 * Upregulation (`UP`), red outline
-* Downregulation (`DOWN`, blue outline)
+* Downregulation (`DOWN`), blue outline
 
 Each element is changable by passing (defaults listed below)
 ```
