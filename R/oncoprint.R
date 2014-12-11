@@ -81,5 +81,5 @@ oncoprint <- function(M, keys=list(somatic="MUT", germline="GERMLINE", amp="AMP"
     geom_tile(data=data$germline, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=square_w, height=square_h, fill="purple", colour=NA) + 
     geom_tile(data=data$upreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="firebrick", size=2) + 
     geom_tile(data=data$downreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="dodgerblue", size=2) + 
-    theme_bw() + xlab("Sample") + ylab("Gene")
+    theme_minimal() + xlab("Sample") + ylab("Gene")
 }
