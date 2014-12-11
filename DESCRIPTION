@@ -1,7 +1,7 @@
 Package: oncoprint
 Type: Package
 Title: Create beautiful oncoprint plots
-Version: 0.1.0
+Version: 0.1.1
 Date: 2014-12-09
 Author: Daniel Klevebring <daniel.klevebring@gmail.com>
 Maintainer: Daniel Klevebring <daniel.klevebring@gmail.com>
