@@ -1,5 +1,16 @@
 # Oncoprint
 
+## Install
+
+Install it directly from GitHub:
+
+```{r}
+library(devtools)
+install_github("dakl/oncoprint")
+```
+
+## Usage
+
 This package can be used to create beautiful oncoprints in R. 
 
 ```
