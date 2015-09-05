@@ -75,11 +75,11 @@ oncoprint <- function(M, keys=list(somatic="MUT", germline="GERMLINE", amp="AMP"
   square_h <- .4
   ggplot(background.m, aes(x=patient, y=gene_y)) + geom_tile(fill="gray", colour="white", size=1.1) + 
     scale_y_continuous(breaks=unique(background.m$gene_y), labels=unique(background.m$gene)) + 
-    geom_tile(data=data$amp, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill="firebrick", colour=NA, size=2) + 
+    geom_tile(data=data$amp, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill="red", colour=NA, size=2) + 
     geom_tile(data=data$del, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill="blue", colour=NA, size=2) + 
     geom_tile(data=data$somatic, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=square_w, height=square_h, fill="forestgreen") + 
     geom_tile(data=data$germline, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=square_w, height=square_h, fill="purple", colour=NA) + 
-    geom_tile(data=data$upreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="firebrick", size=2) + 
-    geom_tile(data=data$downreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="dodgerblue", size=2) + 
+    geom_tile(data=data$upreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="red", size=2) + 
+    geom_tile(data=data$downreg, aes(x=patient, y=gene_y), inherit.aes=FALSE, width=.9, height=.9, fill=NA, colour="blue", size=2) + 
     theme_minimal() + xlab("Sample") + ylab("Gene")
 }
